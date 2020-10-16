@@ -2,6 +2,9 @@
 
 const USER = 'USER';
 
+
+
+
 export function saveUser(user) {
     const stringyUser = JSON.stringify(user);
 
@@ -9,7 +12,7 @@ export function saveUser(user) {
 
 }
 
-export function getUser()  {
+export function getUser() {
 
     const stringyUser = localStorage.getItem(USER);
 

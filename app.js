@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
 
         name: data.get('name'),
         class: data.get('class'),
-        gold: 0,
+        credits: 0,
         hp: 35,
         completed: {}
     });
