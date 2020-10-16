@@ -25,9 +25,27 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-image: url("/assets/space.jpg");
+}
+.gutter-right-logo > img {
+    margin-right: 700px;
+    height: 300px;
+    width: 500px;
+    background-image: url("/assets/space.jpg");
 }
 
+h2 {
+    font-family: star wars;
+     
+    color: yellow;   
+}
+
+h3 {
+
+    color: yellow;
+    font-size: 150px;
+    font-family: papyrus;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -37,7 +55,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-image: url("/assets/space.jpg");
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -46,17 +64,67 @@ section {
     align-items: center;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
-    margin-top: var(--gutter);
+    margin-top: 15%;
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    
+}
+label > input {
+    
+    
+    display: none;
+    
+   
 }
 
+.submit {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.entry {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.starWars:hover {
+
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px 5px black;
+    border-radius: 15%;
+    
+
+}
+
+
+
+input[type="radio"]:checked + img{
+    border: solid 6px blue;
+    border-radius: 15%;
+    
+    
+}
+
+
+label{
+
+    color: yellow;
+}
+.starWars {
+
+    width: 200px;
+    height: 150px;
+    margin-top: 10%;
+}
 header {
     display: flex;
     justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    background-image: url(/assets/space.jpg);
 }
 
 footer {
@@ -72,9 +140,7 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
+
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
