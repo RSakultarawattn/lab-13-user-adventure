@@ -11,13 +11,19 @@ const mission = findById(missions, id);
 
 const h2 = document.createElement('h2');
 
-h2.textContent = missions.title;
+const image = document.createElement('img');
 
+image.src = `../assets/${mission.image}`;
+
+
+
+h2.textContent = mission.title;
+console.log(mission)
 section.appendChild(h2);
-
+section.appendChild(image);
 const form = document.createElement('form');
 
-Selection.appendChild(form);
+section.appendChild(form);
 
 mission.choices.forEach(choice => {
     const label = document.createElement('label');
@@ -30,14 +36,16 @@ mission.choices.forEach(choice => {
     radio.value = choice.id;
     radio.name = 'choices';
 
-    label.append(span, radio);
+    label.append(radio, span);
 
-    form.appendChildI(label);
+    form.appendChild(label);
 
 });
+
 
 const button = document.createElement('button');
 
 button.textContent = 'Confirm';
 
 form.appendChild(button);
+

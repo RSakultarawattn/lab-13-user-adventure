@@ -34,17 +34,40 @@ body {
     background-image: url("/assets/space.jpg");
 }
 
+a  {
+
+    color: yellow;
+
+
+}
+a > img {
+
+    width: 230px;
+}
+
+
 h2 {
     font-family: star wars;
      
     color: yellow;   
 }
 
+
 h3 {
 
     color: yellow;
     font-size: 150px;
     font-family: papyrus;
+}
+
+.chars {
+
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: block;
 }
 main {
     display: flex;

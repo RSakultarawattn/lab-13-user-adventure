@@ -1,15 +1,25 @@
 import missions from '../missions/data.js';
-const ul = document.getElementById('missions');
 
 
-missions.forEach(quest => {
+const ul = document.querySelector('ul');
+
+
+missions.forEach(mission => {
     const li = document.createElement('li');
     const link = document.createElement('a');
+    const image = document.createElement('img');
+
 
     li.appendChild(link);
-    
-    link.textContent = quest.title;
-    link.href = `./missions/?id=${missions.id}`;
+
+    image.src = `../assets/${mission.mapImage}`;
+    link.textContent = mission.title;
+    link.appendChild(image);
+
+
+    link.href = `../missions/?id=${mission.id}`;
+
 
     ul.append(li);
 });
+
