@@ -60,11 +60,7 @@ h3 {
     font-family: papyrus;
 }
 
-.chars {
 
-    display: flex;
-    justify-content: center;
-}
 
 label {
     display: block;
@@ -98,14 +94,14 @@ label > input {
     
    
 }
-
-.submit {
+.entry {
 
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-.entry {
+
+.submit {
 
     display: flex;
     justify-content: center;
